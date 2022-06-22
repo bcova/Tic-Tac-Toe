@@ -9,27 +9,36 @@
     <!-- Icon on browser tab -->
     <link rel="icon" href="/assets/img/tictac.png.png">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
+  
 </head>
 
+
 <body>
+  <div id="players">
+    <h1 id="p1"></h1>
+    <h1 id="p2"></h1>
+  </div>
+
   <div id="input_box">
-    <input type="text" placeholder="Player 1" name="" id="player1">
-    <input type="text" placeholder="Player 2" name="" id="player2">
+    <input type="text" placeholder="Enter P1 Name" name="" id="player1">
+    <input type="text" placeholder="Enter P2 Name" name="" id="player2">
   </div>
 
     <div id="tic_tac_box">
+
       <div id="game">
-        <div class="grid-cell border_bottom border_right" data-value="0">Test</div>
-        <div class="grid-cell border_bottom border_right" data-value="1">Test</div>
-        <div class="grid-cell border_bottom " data-value="2">Test</div>
-        <div class="grid-cell border_bottom border_right" data-value="3">Test</div>
-        <div class="grid-cell border_bottom border_right" data-value="4">Test</div>
-        <div class="grid-cell border_bottom" data-value="5">Test</div>
-        <div class="grid-cell border_right" data-value="6">Test</div>
-        <div class="grid-cell border_right" data-value="7">Test</div>
-        <div class="grid-cell" data-value="8">Test</div>
+        <div id="sq1" class="grid-cell border_bottom border_right" >Test</div>
+        <div id="sq2" class="grid-cell border_bottom border_right" >Test</div>
+        <div id="sq3" class="grid-cell border_bottom" >Test </div>
+        <div id="sq4" class="grid-cell border_bottom border_right" >Test</div>
+        <div id="sq5" class="grid-cell border_bottom border_right" >Test</div>
+        <div id="sq6" class="grid-cell border_bottom" >Test</div>
+        <div id="sq7" class="grid-cell border_right" >Test</div>
+        <div id="sq8" class="grid-cell border_right" >Test</div>
+        <div id="sq9" class="grid-cell">Test</div>
       </div>
+
     </div>
 </body>
 

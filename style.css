@@ -6,6 +6,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(to top, #9a031e, #8a185a, #563b7a, #134a76, #0f4c5c);
@@ -15,6 +16,8 @@ body {
 
 #tic_tac_box {
     display: flex;
+    position:relative;
+    bottom: 17px;
     text-align: center;
     border: 20px black;
     border-style:double;
@@ -44,7 +47,7 @@ body {
     transition: all ease-in-out 0.2s;
 }
 .grid-cell:hover {
-    cursor: pointer;
+    cursor:url('assets/img/tictac.png.png'),auto;
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -68,3 +71,14 @@ body {
     background-color: rgba(0, 0, 0, .5);
 }
 
+#players {
+    border: solid #FB8B24 2px;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 55px;
+    font-size: 25px;
+    display: none;
+    border-radius: 5px;
+}
