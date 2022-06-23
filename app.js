@@ -4,7 +4,18 @@ const input1 = document.getElementById("player1")
 const input2 = document.getElementById("player2")
 const players = document.getElementById("players")
 const name1 = document.getElementById("p1")
-const name2=document.getElementById("p2")
+const name2= document.getElementById("p2")
+let place = document.getElementsByName("p")
+
+const gameState = {
+   players: ['x', 'o'],
+   board: [
+     [null, null, null],
+     [null, null, null],
+     [null, null, null]
+   ],
+   current_player: 'x'
+ }
 
 input1.addEventListener('keypress',(Event) => {
 //   console.log(Event)
@@ -28,8 +39,12 @@ input2.addEventListener('keypress',(Event) => {
 
 board.addEventListener('click',spot)
   
-function spot () {
-    board.getElementById
+function spot (event) {
+    let test = event.target.id
+console.log(test)
+
+    return test
 }
 
- 
+
+

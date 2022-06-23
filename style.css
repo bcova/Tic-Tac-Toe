@@ -45,6 +45,7 @@ body {
 
 .grid-cell {
     transition: all ease-in-out 0.2s;
+    
 }
 .grid-cell:hover {
     cursor:url('assets/img/tictac.png.png'),auto;
@@ -72,7 +73,6 @@ body {
 }
 
 #players {
-    border: solid #FB8B24 2px;
     width: 900px;
     display: flex;
     justify-content: space-around;
